@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">riskApp</string>
+    <string name="enter_army_size">Enter army size</string>
+    <string name="defender_army_size">Defender army size</string>
+    <string name="attacker_army_size">Attacker army size</string>
+    <string name="multi_attack_mode">Multi Attack Mode</string>
+    <string name="clear_inputs">Clear Inputs</string>
+    <string name="settings">Settings</string>
+    <string name="submitButton">"Submit "</string>
+    <string name="ad340_group3">AD340 Group3</string>
+</resources>

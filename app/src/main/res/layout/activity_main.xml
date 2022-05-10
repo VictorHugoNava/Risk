@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/attackArmySize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/attacker_army_size"
+        app:layout_constraintBottom_toTopOf="@+id/defenderArmySize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/defenderArmySize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/defender_army_size"
+        app:layout_constraintBottom_toTopOf="@+id/multiAtackMode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attackArmySize" />
+
+    <Button
+        android:id="@+id/multiAtackMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multi_attack_mode"
+        app:layout_constraintBottom_toTopOf="@+id/settings"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defenderArmySize" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAtackMode" />
+
+    <Button
+        android:id="@+id/clearInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_inputs"
+        app:layout_constraintBottom_toTopOf="@id/nameAndDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submitButton"
+        app:layout_constraintBottom_toTopOf="@+id/nameAndDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <TextView
+        android:id="@+id/nameAndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ad340_group3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
